@@ -5,6 +5,7 @@ Update of [Flask project setup](https://www.thedigitalcatonline.com/blog/2020/07
 ## Further Resources
 
 - [Dissecting a Web stack](https://www.thedigitalcatonline.com/blog/2020/02/16/dissecting-a-web-stack/)
+- [Click](https://click.palletsprojects.com/en/8.0.x/) - A Python package for creating command line interfaces
 
 ## Flask Configuration
 
@@ -30,8 +31,11 @@ Guidelines
 ## Run Api
 
 ```
-# development
+## development
 FLASK_CONFIG=development FLASK_ENV=development flask run --host 0.0.0.0
+# or
+# chmod +x manage.py
+./manage.py flask run --host 0.0.0.0
 ```
 
 ## Pipenv
