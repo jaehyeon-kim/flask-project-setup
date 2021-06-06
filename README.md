@@ -2,6 +2,10 @@
 
 Update of [Flask project setup](https://www.thedigitalcatonline.com/blog/2020/07/05/flask-project-setup-tdd-docker-postgres-and-more-part-1/).
 
+## Further Resources
+
+- [Dissecting a Web stack](https://www.thedigitalcatonline.com/blog/2020/02/16/dissecting-a-web-stack/)
+
 ## Flask Configuration
 
 See [./application/config.py](./application/config.py)
@@ -17,6 +21,18 @@ Guidelines
 - It's pointless to set `DEBUG` and `ENV` in the application configuration, they have to be environment variables.
 - Generally you don't need to set `FLASK_DEBUG`, just set `FLASK_ENV` to _development_.
 - Testing doesn't need the debug server turned on, so you can set `FLASK_ENV` to _production_ during that phase. It needs `TESTING` set to _True_, though, and that has to be done inside the application.
+
+### Notes
+
+- [Flask configuration documentation](https://flask.palletsprojects.com/en/2.0.x/config/)
+- [Flask application factories](https://flask.palletsprojects.com/en/2.0.x/patterns/appfactories/)
+
+## Run Api
+
+```
+# development
+FLASK_CONFIG=development FLASK_ENV=development flask run --host 0.0.0.0
+```
 
 ## Pipenv
 
