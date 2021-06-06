@@ -15,6 +15,7 @@ docker-compose = "*"
 Flask = "*"
 flask-sqlalchemy = "*"
 psycopg2-binary = "*"
+flask-migrate = "*"
 
 [pipenv]
 allow_prereleases = true

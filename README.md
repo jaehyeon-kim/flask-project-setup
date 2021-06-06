@@ -9,6 +9,7 @@ Update of [Flask project setup](https://www.thedigitalcatonline.com/blog/2020/07
 - [Python subprocess module](https://docs.python.org/3/library/subprocess.html)
 - [Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/) - A Flask extension to work with SQLAlchemy
 - [SQLAlchemy and PostgreSQL](https://docs.sqlalchemy.org/en/13/dialects/postgresql.html) - The Python SQL Toolkit and ORM
+- [Flask-Migrate](https://flask-migrate.readthedocs.io/en/latest/) - A Flask extension to handle database migrations with Alembic
 
 ## Flask Configuration
 
@@ -44,6 +45,9 @@ FLASK_CONFIG=development FLASK_ENV=development flask run --host 0.0.0.0
 ./manage.py compose exec web bash
 ./manage.py compose down
 ./manage.py compose exec db psql -U postgres
+./manage.py flask db init
+./manage.py flask db migrate -m "Some message"
+./manage.py flask db upgrade
 ```
 
 ## Pipenv
