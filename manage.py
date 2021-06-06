@@ -59,5 +59,18 @@ def compose(subcommand):
         p.wait()
 
 
+@cli.command(context_settings={"ignore_unknown_options": True})
+@click.argument("subcommand", nargs=-1, type=click.Path())
+def docker(subcommand):
+    cmdline = ["docker"] + list(subcommand)
+
+    try:
+        p = subprocess.Popen(cmdline)
+        p.wait()
+    except KeyboardInterrupt:
+        p.send_signal(signal.SIGINT)
+        p.wait()
+
+
 if __name__ == "__main__":
     cli()
