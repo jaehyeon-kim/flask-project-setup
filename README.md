@@ -11,6 +11,8 @@ Update of [Flask project setup](https://www.thedigitalcatonline.com/blog/2020/07
 - [SQLAlchemy and PostgreSQL](https://docs.sqlalchemy.org/en/13/dialects/postgresql.html) - The Python SQL Toolkit and ORM
 - [Flask-Migrate](https://flask-migrate.readthedocs.io/en/latest/) - A Flask extension to handle database migrations with Alembic
 - [Useful pytest command line options](https://www.thedigitalcatonline.com/blog/2018/07/05/useful-pytest-command-line-options/)
+- [pytest-flask](https://pytest-flask.readthedocs.io/en/latest/) - A plugin for pytest that simplifies testing Flask applications
+- [Flask-SQLAlchemy API](https://flask-sqlalchemy.palletsprojects.com/en/2.x/api/)
 
 ## Flask Configuration
 

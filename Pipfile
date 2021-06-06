@@ -6,6 +6,7 @@ verify_ssl = true
 [dev-packages]
 pytest = "*"
 pytest-cov = "*"
+pytest-flask = "*"
 black = "*"
 ipdb = "*"
 # in order to use docker-compose command within virtualenv
