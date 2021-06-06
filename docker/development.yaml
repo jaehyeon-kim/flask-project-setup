@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  web:
+    build:
+      context: ${PWD}
+      dockerfile: docker/Dockerfile
+    image: flask
+    environment:
+      FLASK_ENV: ${FLASK_ENV}
+      FLASK_CONFIG: ${FLASK_CONFIG}
+    command: flask run --host 0.0.0.0
+    volumes:
+      - ${PWD}:/opt/code
+    ports:
+      - '5000:5000'

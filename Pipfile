@@ -8,6 +8,8 @@ pytest = "*"
 pytest-cov = "*"
 black = "*"
 ipdb = "*"
+# in order to use docker-compose command within virtualenv
+docker-compose = "*"
 
 [packages]
 Flask = "*"

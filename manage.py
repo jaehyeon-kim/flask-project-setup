@@ -44,7 +44,20 @@ def flask(subcommand):
         p.wait()
 
 
-cli.add_command(flask)
+@cli.command(context_settings={"ignore_unknown_options": True})
+@click.argument("subcommand", nargs=-1, type=click.Path())
+def compose(subcommand):
+    docker_compose_file = "docker/development.yaml"
+    docker_compose_cmdline = ["docker-compose", "-f", docker_compose_file]
+    cmdline = docker_compose_cmdline + list(subcommand)
+
+    try:
+        p = subprocess.Popen(cmdline)
+        p.wait()
+    except KeyboardInterrupt:
+        p.send_signal(signal.SIGINT)
+        p.wait()
+
 
 if __name__ == "__main__":
     cli()
