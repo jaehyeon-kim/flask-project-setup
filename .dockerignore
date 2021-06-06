@@ -1,0 +1,7 @@
+__pycache__
+.git
+.pytest_cache
+.venv
+.vscode
+.gitignore
+README.md
