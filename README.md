@@ -2,6 +2,22 @@
 
 Update of [Flask project setup](https://www.thedigitalcatonline.com/blog/2020/07/05/flask-project-setup-tdd-docker-postgres-and-more-part-1/).
 
+## Flask Configuration
+
+See [./application/config.py](./application/config.py)
+
+Some notes on the variables and the parameters involved in the configuration.
+
+- `FLASK_ENV` and `FLASK_DEBUG` have to be initialised outside the application as the code might misbehave if they are changed once the engine has been started.
+- `FLASK_ENV` can have only the two values _development_ and _production_ and the main difference is in performances.
+- If `FLASK_ENV` is _development_ then `FLASK_DEBUG` becomes automatically _True_.
+
+Guidelines
+
+- It's pointless to set `DEBUG` and `ENV` in the application configuration, they have to be environment variables.
+- Generally you don't need to set `FLASK_DEBUG`, just set `FLASK_ENV` to _development_.
+- Testing doesn't need the debug server turned on, so you can set `FLASK_ENV` to _production_ during that phase. It needs `TESTING` set to _True_, though, and that has to be done inside the application.
+
 ## Pipenv
 
 - [Advanced Usage of Pipenv](https://pipenv-fork.readthedocs.io/en/latest/advanced.html)
