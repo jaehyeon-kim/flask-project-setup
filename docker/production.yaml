@@ -27,8 +27,14 @@ services:
     command: gunicorn -w 4 -b 0.0.0.0 wsgi:app
     volumes:
       - ${PWD}:/opt/code
+    # ports:
+    #   - 8000:8000
+  nginx:
+    image: nginx:stable
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
-      - '8000:8000'
+      - 8080:8080
 
 volumes:
   pgdata:
