@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f5eee944a89421e240dd3c6f495a0f6acc3e5bdddedc538a5cda8d66fbb1e094"
+            "sha256": "5ba367ae13ebe0d29bcda0cd6c73299bb8dbe7fbc388371e516af0bcc2014b9e"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -108,6 +108,14 @@
             ],
             "markers": "python_version >= '3'",
             "version": "==1.1.0"
+        },
+        "gunicorn": {
+            "hashes": [
+                "sha256:9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e",
+                "sha256:e0a968b5ba15f8a328fdfd7ab1fcb5af4470c28aaf7e55df02a99bc13138e6e8"
+            ],
+            "index": "pypi",
+            "version": "==20.1.0"
         },
         "importlib-metadata": {
             "hashes": [

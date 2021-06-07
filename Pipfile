@@ -17,6 +17,7 @@ Flask = "*"
 flask-sqlalchemy = "*"
 psycopg2-binary = "*"
 flask-migrate = "*"
+gunicorn = "*"
 
 [pipenv]
 allow_prereleases = true
