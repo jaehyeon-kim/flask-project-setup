@@ -51,6 +51,22 @@ FLASK_CONFIG=development FLASK_ENV=development flask run --host 0.0.0.0
 ./manage.py flask db init
 ./manage.py flask db migrate -m "Some message"
 ./manage.py flask db upgrade
+
+## flask migrate
+./manage.py compose up -d
+# if first time
+./manage.py create-initial-db
+./manage.py flask db migrate -m "Initial user model"
+./manage.py flask db upgrade
+
+## check with psql
+./manage.py compose exec db psql -U postgres
+postgres=# \l
+postgres=# \c application
+# You are now connected to database "application" as user "postgres".
+application=# \dt
+application=# select * from alembic_version;
+application=# \d users
 ```
 
 ## Pipenv
