@@ -13,6 +13,7 @@ Update of [Flask project setup](https://www.thedigitalcatonline.com/blog/2020/07
 - [Useful pytest command line options](https://www.thedigitalcatonline.com/blog/2018/07/05/useful-pytest-command-line-options/)
 - [pytest-flask](https://pytest-flask.readthedocs.io/en/latest/) - A plugin for pytest that simplifies testing Flask applications
 - [Flask-SQLAlchemy API](https://flask-sqlalchemy.palletsprojects.com/en/2.x/api/)
+- [Gunicorn](https://gunicorn.org/) - A Python WSGI HTTP Server
 
 ## Flask Configuration
 
