@@ -1,6 +1,10 @@
 # flask-project-setup
 
-Update of [Flask project setup](https://www.thedigitalcatonline.com/blog/2020/07/05/flask-project-setup-tdd-docker-postgres-and-more-part-1/).
+Flask project setup: TDD, Docker, Postgres and more
+
+- [Part 1](https://www.thedigitalcatonline.com/blog/2020/07/05/flask-project-setup-tdd-docker-postgres-and-more-part-1/)
+- [Part 2](https://www.thedigitalcatonline.com/blog/2020/07/06/flask-project-setup-tdd-docker-postgres-and-more-part-2/)
+- [Part 3](https://www.thedigitalcatonline.com/blog/2020/07/07/flask-project-setup-tdd-docker-postgres-and-more-part-3/)
 
 ## Further Resources
 
